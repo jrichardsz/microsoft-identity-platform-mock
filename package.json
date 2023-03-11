@@ -1,0 +1,48 @@
+{
+  "name": "microsoft-identity-platform-mock",
+  "description": "Simple mock of Microsoft identity platform endpoints",
+  "version": "1.0.0",
+  "author": "JRichardsz <jrichardsz.java@gmail.com>",
+  "contributors": [
+    "JRichardsz <jrichardsz.java@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/jrichardsz/microsoft-identity-platform-mock",
+  "homepage": "http://expressjs.com/",
+  "keywords": [
+    "microsof",
+    "oidc",
+    "mock",
+    "oauth",
+    "identity",
+    "platform"
+  ],
+  "devDependencies": {
+    "axios": "^1.3.4",
+    "badges4cov": "github:jrichardsz/badges4cov",
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "mocha-suppress-logs": "^0.3.1",
+    "nyc": "^15.1.0"
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "History.md",
+    "Readme.md",
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "start": "node src/main/node/Index.js",
+    "test": "./src/test/test.sh",
+    "badges": "badges4cov --source=nyc_json --nyc_json_file_location=./coverage/coverage-summary.json --output_folder=./coverage"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "nodejs-require-enhancer": "github:jrichardsz/nodejs-require-enhancer#1.0.0-beta"
+  }
+}
